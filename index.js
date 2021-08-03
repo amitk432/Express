@@ -17,8 +17,7 @@ app.get('/weather', (req, res) => {
                 var parsedBody = JSON.parse(body);
                 var current = parsedBody["current"];
                 var location = parsedBody["location"];
-                var request = parsedBody["request"];
-                res.send({ current, location, request });
+                res.send({ current, location });
             }
         }
     );
